@@ -14,7 +14,7 @@ namespace SeminarskiRadDesignPatternTextIterator
         public TextIterator(string str)
         {
             this.str = str;
-            splited = str.Split(separators);
+            splited = str.Split(separators, StringSplitOptions.RemoveEmptyEntries);
             pos = 0;
         }
 
